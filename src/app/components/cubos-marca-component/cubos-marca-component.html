@@ -1,1 +1,13 @@
-<p>cubos-marca-component works!</p>
+<div>
+    @for(cubo of cubos; track cubo){
+        <div class="card" style="width: 18rem;">
+            <img src="{{cubo.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{cubo.nombre}}</h5>
+                <p class="card-text">Modelo: {{cubo.modelo}}</p> <span>ID Cubo: {{cubo.idCubo}}</span>
+                <p class="card-text">Marca: {{cubo.marca}}</p> 
+                <p class="card-text">Precio: {{cubo.precio}}€</p>
+            </div>
+        </div>
+    }
+</div>

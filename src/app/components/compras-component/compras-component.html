@@ -1,1 +1,29 @@
-<p>compras-component works!</p>
+<div>
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-primary"
+        >
+            <thead>
+                <tr>
+                    <th scope="col">ID CUBO</th>
+                    <th scope="col">ID PEDIDO</th>
+                    <th scope="col">ID USUARIO</th>
+                    <th scope="col">FECHA PEDIDO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(compra of compras; track compra){
+                    <tr class="">
+                        <td scope="row">{{compra.idCubo}}</td>
+                        <td>{{compra.idPedido}}</td>
+                        <td>{{compra.idUsuario}}</td>
+                        <td>{{compra.fechaPedido}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+</div>

@@ -1,1 +1,9 @@
-<p>login-component works!</p>
+<div>
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+        <label>Email:</label>
+        <input type="text" class="form-control" name="cajaemail" #cajaemail="ngModel" [(ngModel)]="user.email">
+        <label>Password:</label>
+        <input type="text" class="form-control" name="cajapassword" #cajapassword="ngModel" [(ngModel)]="user.password">
+        <button>Login</button>
+    </form>
+</div>
